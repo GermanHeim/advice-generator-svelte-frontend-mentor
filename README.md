@@ -13,7 +13,6 @@ This is a solution to the [Advice generator app challenge on Frontend Mentor](ht
   - [My process](#my-process)
     - [Built with](#built-with)
     - [Useful resources](#useful-resources)
-    - [Future ideas](#future-ideas)
   - [Author](#author)
 
 ## Overview
@@ -48,10 +47,6 @@ I have changed the font color of the advice since it had low contrast. I also ad
 
 - [Terminal spinner by Zeno Rocha](https://codepen.io/zenorocha/pen/LLBVmo) - Spinner animation for loading state.
 - [Advice Slip API](https://api.adviceslip.com/) - API used to get the advices.
-
-### Future ideas
-
-Add animation when the advice is changed.
 
 ## Author
 
