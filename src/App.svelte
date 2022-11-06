@@ -37,18 +37,18 @@
       {/if}
       <div class="divider">
         <img
-          src="/src/assets/pattern-divider-desktop.svg"
+          src="pattern-divider-desktop.svg"
           class="divider-desktop"
           alt="Desktop divider"
         />
         <img
-          src="/src/assets/pattern-divider-mobile.svg"
+          src="pattern-divider-mobile.svg"
           class="divider-mobile"
           alt="Mobile divider"
         />
       </div>
       <button class="dice" on:click={fetchdata}>
-        <img src="/src/assets/icon-dice.svg" alt="Dice" />
+        <img src="icon-dice.svg" alt="Dice" />
       </button>
     </div>
   </container>
