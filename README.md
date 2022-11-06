@@ -29,6 +29,7 @@ Users should be able to:
 ### Screenshot
 
 ![Screenshot](/public/screenshot.png)
+I have changed the font color of the advice since it had low contrast. I also added a rotating animation to the dice used in the dice button.
 
 ### Links
 
