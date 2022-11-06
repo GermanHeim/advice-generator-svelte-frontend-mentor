@@ -5,14 +5,19 @@
   let advice;
   let adviceid;
 
-  function fetchdata() {
-    fetch("https://api.adviceslip.com/advice")
+  async function fetchdata() {
+    await fetch("https://api.adviceslip.com/advice")
       .then((response) => response.json())
       .then((data) => {
         advice = data.slip.advice;
         adviceid = data.slip.id;
         console.log(data);
       });
+  }
+
+  let promise = fetchdata();
+  function handleClick() {
+    promise = fetchdata();
   }
 
   onMount(fetchdata);
@@ -27,14 +32,14 @@
 <main>
   <container>
     <div class="flexbox-col">
-      {#if !advice}
+      {#await promise}
         <!-- Terminal spinner by Zeno Rocha -->
         <!-- https://codepen.io/zenorocha/pen/LLBVmo -->
         <div class="spinner" />
-      {:else}
+      {:then}
         <h2 class="adviceid">Advice #{adviceid}</h2>
         <h1 class="advice">"{advice}"</h1>
-      {/if}
+      {/await}
       <div class="divider">
         <img
           src="pattern-divider-desktop.svg"
@@ -47,7 +52,7 @@
           alt="Mobile divider"
         />
       </div>
-      <button class="dice" on:click={fetchdata}>
+      <button class="dice" on:click={handleClick}>
         <img src="icon-dice.svg" alt="Dice" />
       </button>
     </div>
@@ -140,7 +145,7 @@
     vertical-align: middle;
   }
 
-  .dice :hover {
+  .dice:hover {
     -webkit-transform: rotate(360deg);
     -moz-transform: rotate(360deg);
     -o-transform: rotate(360deg);
@@ -152,7 +157,7 @@
     -ms-transition: all 800ms ease;
     -o-transition: all 800ms ease;
     transition: all 800ms ease;
-    box-shadow: 0px 0px 100px 10px hsl(150, 100%, 66%);
+    box-shadow: 0px 0px 65px 10px hsla(150, 100%, 66%, 0.367);
   }
 
   h1 {
