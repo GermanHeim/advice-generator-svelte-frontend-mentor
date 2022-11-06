@@ -13,6 +13,7 @@ This is a solution to the [Advice generator app challenge on Frontend Mentor](ht
   - [My process](#my-process)
     - [Built with](#built-with)
     - [Useful resources](#useful-resources)
+    - [Future ideas](#future-ideas)
   - [Author](#author)
 
 ## Overview
@@ -27,11 +28,11 @@ Users should be able to:
 
 ### Screenshot
 
-![Screenshot](./src/assets/screenshot.png)
+![Screenshot](/public/screenshot.png)
 
 ### Links
 
-- [Demo]()
+- [Demo](https://advice-generator-svelte-frontend-mentor.vercel.app/)
 
 ## My process
 
@@ -46,6 +47,10 @@ Users should be able to:
 
 - [Terminal spinner by Zeno Rocha](https://codepen.io/zenorocha/pen/LLBVmo) - Spinner animation for loading state.
 - [Advice Slip API](https://api.adviceslip.com/) - API used to get the advices.
+
+### Future ideas
+
+Add animation when the advice is changed.
 
 ## Author
 
