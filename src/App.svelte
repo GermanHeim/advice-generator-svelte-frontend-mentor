@@ -138,6 +138,12 @@
     cursor: pointer;
     position: relative;
     bottom: -3.5rem;
+
+    -webkit-transition: all 800ms ease;
+    -moz-transition: all 800ms ease;
+    -ms-transition: all 800ms ease;
+    -o-transition: all 800ms ease;
+    transition: all 800ms ease;
   }
 
   .dice img {
@@ -146,18 +152,12 @@
   }
 
   .dice:hover {
+    box-shadow: 0px 0px 65px 10px hsla(150, 100%, 66%, 0.367);
     -webkit-transform: rotate(360deg);
     -moz-transform: rotate(360deg);
     -o-transform: rotate(360deg);
     -ms-transform: rotate(360deg);
     transform: rotate(360deg);
-
-    -webkit-transition: all 800ms ease;
-    -moz-transition: all 800ms ease;
-    -ms-transition: all 800ms ease;
-    -o-transition: all 800ms ease;
-    transition: all 800ms ease;
-    box-shadow: 0px 0px 65px 10px hsla(150, 100%, 66%, 0.367);
   }
 
   h1 {
